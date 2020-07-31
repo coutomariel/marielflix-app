@@ -1,15 +1,15 @@
 import React from 'react';
-import Menu from './components/menu/Menu';
+import Menu from '../../components/menu/Menu';
 
-import dadosIniciais from './data/dados_iniciais.json'
+import dadosIniciais from '../../data/dados_iniciais.json'
 
-import BannerMain from './components/BannerMain'
-import Carousel from './components/Carousel'
-import Footer from './components/Footer'
+import BannerMain from '../../components/BannerMain'
+import Carousel from '../../components/Carousel'
+import Footer from '../../components/Footer'
 
-function App() {
+function Home() {
   return (
-    <div className="App">
+    <div style={{ background:"#141414"}}>
       <Menu/>
       
       <BannerMain
@@ -38,8 +38,10 @@ function App() {
         ignoreFirstVideo
         category={dadosIniciais.categorias[5]}
       />
+
+      <Footer/>
     </div>
   );
 }
 
-export default App;
+export default Home;
